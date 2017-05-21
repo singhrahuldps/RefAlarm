@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:title="Settings"
+        android:summary="Switch to turn the alarm on/off"
+        android:defaultValue="false"
+        android:key="onoff" />
+    <ListPreference
+        android:title="Alarm Frequency"
+        android:key="frequency"
+        android:defaultValue="1"
+        android:summary="Select the time interval for which if left idle,\n the phone will sound an alarm"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"/>
+    <RingtonePreference
+        android:title="Alarm Sound"
+        android:summary="Select the alarm ringtone"
+        android:key="ringtone" />
+</PreferenceScreen>
